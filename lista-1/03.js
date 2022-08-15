@@ -24,7 +24,7 @@
  */
 
 // Entrada
-var notas = [10, 8, 9.5, 7, 10]
+var notas = [10, 8, 9.5, 7, 0]
 
 soma = 0
 
@@ -41,3 +41,13 @@ media = soma / quantidadeDeNotas
 var resultado = '👉 a média das ' + quantidadeDeNotas + ' notas do bimestre é ' + media.toFixed(1)
 
 console.log(resultado)
+
+if (media = 7){
+    console.log('Aprovado')
+} else{
+    console.log('Reprovado')
+}
+
+
+
+// <red>  fazer if da media se é aprovado ou reprovado  </red>

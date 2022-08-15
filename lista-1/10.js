@@ -1,48 +1,56 @@
-// Faça um programa q criptografia/decriptografia de uma mensagem (string)
-
-let mensagem = 'lorem'
-mensagem_cripto = []
-
-// Laço para trocar letras da mensagem por simbolos
-for (var i in mensagem){
-    if (mensagem[i] == 'l'){
-        mensagem_cripto.push("#")
-    }  else if (mensagem[i] == 'o'){
-        mensagem_cripto.push("!")
-    } else if (mensagem[i] == 'r'){
-        mensagem_cripto.push("*")
-    } else if (mensagem[i] == 'e'){
-        mensagem_cripto.push("&")
-    } else if (mensagem[i] == 'm'){
-        mensagem_cripto.push("@")
-    }
-}
-
-mensagem_cripto = mensagem_cripto.join('')
-
-console.log(`A mensagem criptografada é: ${mensagem_cripto}`)
-
-// Laço para os simbolos pelas letras da mensagem original
-mensagem_decripto = []
-
-for (var i in mensagem_cripto){
-    if (mensagem_cripto[i] == "#"){
-        mensagem_decripto.push("l")
-    }  else if (mensagem_cripto[i] == "!"){
-        mensagem_decripto.push("o")
-    } else if (mensagem_cripto[i] == "*"){
-        mensagem_decripto.push("r")
-    } else if (mensagem_cripto[i] == "&"){
-        mensagem_decripto.push("e")
-    } else if (mensagem_cripto[i] == "@"){
-        mensagem_decripto.push("m")
-    }
-}
-
-mensagem_decripto = mensagem_decripto.join('')
+/**
+ * Faça um programa que dado um texto de entrada, imprima o texto
+ * criptografado. A criptografia inicial é bem simples,
+ * apenas converta a para b, b para c e assim por diante. 
+ * 
+ * ENTRADA          SAÍDA
+ * abacate          bcbdbuf
+ * zebra            @fcsb
+ * Zebra            $fcsb
+ * 
+ * DICAS:
+ * É uma variante do exercício js06
+ * Pesquise a tabela ASCII, ai vamos ver que a = 97, que A = 65
+ * (cada caracter no teclado tem uma representação numérica)
+ * Pesquise os métodos de String fromCharCode que converte a para 97
+ * e charCodeAt que faz 97 voltar para a
+ * Assim, no podemos usar um método bem simples de criptografia que seria mudar
+ * o código ASCII de forma a incrementar 1, ou seja, mudar de a para b, b para c 
+ * e assim por diante!
+ * quando for z ou Z mudar para @ e $ respectivamente ao invés de {
+ * 
+ * Tarefa
+ * - entenda como converter a para 97
+ * - percorra o abacate para gerar os ordinais correspondente: 97,  98, 97 ...
+ * - percorra a textoCripto dos inteiros corresponde somando 1       98, 100, 98 ...
+ * - percorra novamente, agora voltando para caractere          b,   c, b  ...
+ *
+ * IMPORTANTE:
+ * - Não usar bibliotecas, basta manipular a string de entrada de forma a embaralhá-la
+ */
 
 
-console.log(`A mensagem decriptografada é: ${mensagem_decripto}`)
+// 'ABC'.charCodeAt(0); // retorna 65
+// String.fromCharCode(65, 66, 67);  // retorna "ABC
 
 
+// Entrada
+
+// var texto = 'O Eliel me fez refazer a lista, ele é uma pessoa ruim? Talvez!'
+var texto = 'awdkladkawkdawdadadadkawdawçlkp0923i8989385983985985-2858w3-0r0ir3opie08@**@()*()#*(!*@#&*@#(!*&*!*#$*!;;.;.;,,.,.,;.1212321213215454798784512312154658748979875123131654151521465845456123,21346546465:>:..;,.;,.;,awkdkawd1321.,231;23,1.3,;5,'
+
+// implemente aqui uma lógica para descriptografar o texto
+
+var textoCripto = []
+
+texto.split('').forEach(function(i){
+    x = (i).charCodeAt(0)+341
+    x = String.fromCharCode(x)
+    textoCripto.push(x)
+    })
+
+
+textoCripto = textoCripto.join('')
+
+console.log(textoCripto)
 
