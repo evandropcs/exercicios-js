@@ -1,5 +1,6 @@
 //Faça um Programa que imprima a soma de dois numeros deve exibir uma mensagem caso nao seja números válidos 
 
+
 let n1 = 'a'
 let n2 = 222
 
