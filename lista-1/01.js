@@ -11,9 +11,8 @@
  */
 
 
-let readlineSync = require('readline-sync');
 
-let anoNascimento = parseInt(readlineSync.question('Em que ano você nasceu? '));
+let anoNascimento = 1991
 
 
 let anoAtual = new Date().getFullYear()

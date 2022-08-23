@@ -36,10 +36,13 @@ dia_de_folga = meses.indexOf(primeiro_dia_trabalhado);
 
 for (var i = dia_de_folga; i < meses.length; i += 8) {
   if (i + 8 <= meses.length) {
-    folgas.push(meses[dia_de_folga + (i - 2)]);
-    folgas.push(meses[dia_de_folga + (i - 1)]);
+    if (meses[dia_de_folga + (i - 2)] != undefined){
+    folgas.push(meses[dia_de_folga + (i - 2)])
+    folgas.push(meses[dia_de_folga + (i - 1)])
+    }
   }
 }
 
 console.log(folgas);
 console.log(`Irá folgar dia 12/out? ${folgas.includes("12/out")}`)
+

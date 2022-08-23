@@ -14,10 +14,8 @@
  *    e compare se o resultado é o esperado
  */
 
- let readlineSync = require('readline-sync');
-
 // Entrada
-var metros = parseInt(readlineSync.question('Digite um número: '));
+var metros = 10;
 
 // Altere a expressão abaixo para calcular cm com base na var metros
 var cm = 100
