@@ -11,4 +11,3 @@ if(vogal.includes(entrada.toLowerCase())){
     console.log('Consoante')
 }
 
-{/* <red> fazer mais implicito com if else</red> */}

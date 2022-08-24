@@ -17,4 +17,3 @@ if(verdadeira.includes(entrada.toLowerCase())){
     console.log('false')
 }
 
-// <red>fazer forma mais simples passando entrada para lower, //var verdadeira = [ 'y','yes', 's', 'sim', 1, '👍']</red>

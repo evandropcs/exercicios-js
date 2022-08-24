@@ -12,12 +12,14 @@
    
 // }
 var numeros = [ 3, 235, 127, 2128, 2322, 4410]
+let ehPar
+let imparPar
 
 for(var x in numeros){
-    if(numeros[x] % 2 == 0){
-        console.log(numeros[x]+' é par')
+    ehPar = numeros[x] % 2 == 0
+    imparPar = 'impar'
+    if(ehPar){
+        imparPar = 'par'
     }
-    else{
-        console.log(numeros[x]+' é impar')
-    }
+    console.log(`O número ${numeros[x]} é : ${imparPar}`)
 }

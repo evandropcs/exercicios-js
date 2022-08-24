@@ -13,7 +13,7 @@
 // entrada = 7
 // console.log(`O dia da semana referenciado no número é: ${dict[entrada]}`)
 
-entrada = 7
+entrada = 5
 
 switch (entrada){
     case 1:
@@ -36,8 +36,9 @@ switch (entrada){
     break
     case 7:
     console.log('O dia da semana é: SABADO!')
+    break
+    default:
+    console.log('O dia inválido!')
 
 }
 
-
-/* <red> fazer com switch case</red> */

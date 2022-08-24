@@ -9,7 +9,8 @@ console.log('')
 
 var i = 1
 while(i < 11){
-    console.log(`${n} x ${i} = ${n*i}`)
+    var produto = n*i
+    console.log(`${n} x ${i} = ${produto}`)
 i ++
 }
 

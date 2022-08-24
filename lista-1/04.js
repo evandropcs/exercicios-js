@@ -20,5 +20,3 @@ if (typeof(n2) != 'number'){
 if(typeof(n1) === 'number' && typeof(n2) === 'number'){
     console.log(`A soma de ${n1} + ${n2} = ${soma}`)
 }
-
-// Fazer vericações separadas para o typeof do n1 e do n2, e só após exibir a soma

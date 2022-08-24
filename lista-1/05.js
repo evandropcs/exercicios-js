@@ -12,5 +12,3 @@ f_c = 5 * ((f-32) / 9)
 console.log(`${f} graus fahrenheit, correspondem a: ${f_c} graus em celcios .`)
 
 
-
-// <red>inverter de celsius para fahre</red>

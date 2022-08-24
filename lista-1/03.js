@@ -49,5 +49,3 @@ if (media = 7){
 }
 
 
-
-// <red>  fazer if da media se é aprovado ou reprovado  </red>
